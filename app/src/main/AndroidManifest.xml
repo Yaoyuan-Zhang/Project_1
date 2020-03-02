@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yyz.project_1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Better Buy"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.MyFavoriteProductActivity"></activity>
+        <activity android:name=".activities.OrderActivity" />
+        <activity android:name=".activities.Register2Activity" />
+        <activity android:name=".activities.Login2Activity" />
+        <activity android:name=".activities.AccountActivity" />
+        <activity android:name=".activities.CheckOutActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.CartActivity" />
+        <activity android:name=".activities.ProductDetailActivity">
+            <tools:validation testUrl="http://com/activity" />
+
+            <intent-filter>
+                <data
+                    android:host="project_1"
+                    android:pathPrefix="/product_detail"
+                    android:scheme="yyz" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com"
+                    android:pathPattern="/activity"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SubCategoryActivity" />
+        <activity android:name=".activities.CategoryActivity"></activity>
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

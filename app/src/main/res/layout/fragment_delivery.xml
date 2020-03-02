@@ -1,0 +1,42 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+
+
+    <CheckBox
+        android:layout_above="@id/pickup_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery"
+        android:id="@+id/delivery_box"
+
+        android:textSize="30dp"/>
+
+    <CheckBox
+        android:layout_centerInParent="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Pick Up"
+        android:id="@+id/pickup_box"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_below="@id/pickup_box"
+        android:layout_width="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:id="@+id/button_delivery"
+        android:text="next ->"/>
+
+
+</RelativeLayout>

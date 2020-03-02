@@ -1,0 +1,55 @@
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/card_badge"
+    android:divider="@drawable/badge_line"
+    android:showDividers="middle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="order_id"
+        android:textSize="20dp"
+        android:id="@+id/order_id_order_history"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="order_Status"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:id="@+id/order_status_order_history"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="order_shipping_address"
+        android:textSize="15dp"
+        android:id="@+id/order_shipping_address_order_history"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="order_payment_way"
+        android:textSize="15dp"
+        android:id="@+id/order_payment_way_order_history"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="order_amount"
+        android:textSize="15dp"
+        android:id="@+id/order_amount_order_history"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/products_details"/>
+
+
+
+
+
+
+
+</LinearLayout>

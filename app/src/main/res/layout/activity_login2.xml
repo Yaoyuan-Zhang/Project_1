@@ -1,0 +1,123 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white"
+
+    >
+
+    <ImageView
+        android:layout_width="250dp"
+
+        android:layout_height="250dp"
+        android:id="@+id/image_splash"
+        android:layout_above="@id/linear_login"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Email"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Password"
+
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Remember me?"
+                android:id="@+id/remember_checkbox"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:background="@android:color/holo_orange_light"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:text="Login"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="New User? Register"/>
+
+
+
+
+
+</RelativeLayout>

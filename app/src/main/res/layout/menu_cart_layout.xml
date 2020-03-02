@@ -1,0 +1,29 @@
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/image_menu"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_cart" />
+
+    <TextView
+        android:background="@drawable/badge_circle"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginLeft="12dp"
+
+        android:text="10"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/text_view__count_menu"
+        android:textSize="12dp"/>
+
+
+</RelativeLayout>

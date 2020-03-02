@@ -1,0 +1,46 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/linear_account"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_email_account"
+            android:hint="Email"
+            android:gravity="center"
+            android:textSize="30dp"/>
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_account"
+            android:hint="password"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_changed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:text="submit"/>
+</RelativeLayout>

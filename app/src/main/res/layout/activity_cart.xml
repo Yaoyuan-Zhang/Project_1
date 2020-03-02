@@ -1,0 +1,147 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <include layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:layout_marginRight="15dp"
+            android:layout_above="@+id/bottom_navigation_category"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/clear_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Empty Cart"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_view_chart"
+            android:layout_above="@+id/relatvie_layout"
+            android:layout_alignParentTop="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/relatvie_layout"
+            android:layout_above="@id/bottom_navigation_category"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/linear_cart">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="total_before_tax"
+                    android:gravity="right"
+                    android:textSize="15dp"
+
+                    android:id="@+id/total_before_cart"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax:"
+                    android:gravity="right"
+                    android:textSize="15dp"
+
+
+                    android:id="@+id/tax_cart"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:gravity="right"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+
+                    android:id="@+id/total_after_cart"/>
+
+
+            </LinearLayout>
+
+            <Button
+
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+
+                android:textAllCaps="false"
+                android:background="@android:color/holo_orange_light"
+                android:id="@+id/checkout_cart"
+                android:text="Check out"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation"
+            android:background="@color/colorPrimary"
+            android:id="@+id/bottom_navigation_category"
+            app:itemIconTint="@android:color/white"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

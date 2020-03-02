@@ -1,0 +1,72 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+
+        android:id="@+id/linear_fragment_common">
+
+
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:background="@drawable/badge_circle"
+            android:text="Sort filter"
+            android:textAllCaps="false"
+            android:id="@+id/sort_by_what"/>
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:background="@drawable/badge_circle"
+            android:text="Default"
+            android:textAllCaps="false"
+            android:id="@+id/sort_by_default"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:background="@drawable/badge_circle"
+            android:text="Price(L-H)"
+            android:textAllCaps="false"
+            android:id="@+id/sort_by_price"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:background="@drawable/badge_circle"
+            android:text="Price(H-L)"
+            android:textAllCaps="false"
+            android:id="@+id/sort_by_productname"/>
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:layout_below="@id/linear_fragment_common"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view_product"/>
+
+    <com.yyz.project_1.actionbutton.DragFloatActionButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="5dp"
+        android:background="@drawable/drag_badge"
+        android:src="@drawable/ic_view_list"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/change_view"/>
+
+
+</RelativeLayout>

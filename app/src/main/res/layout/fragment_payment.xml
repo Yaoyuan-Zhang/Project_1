@@ -1,0 +1,55 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <CheckBox
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paypal"
+        android:id="@+id/paypal_box"
+        android:layout_above="@id/credit_box"
+
+        android:textSize="30dp"/>
+
+    <CheckBox
+        android:layout_above="@id/bankchecking_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Credit Card"
+        android:id="@+id/credit_box"
+        android:textSize="30dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bank Checking"
+        android:layout_centerInParent="true"
+        android:id="@+id/bankchecking_box"
+        android:textSize="30dp"/>
+
+    <CheckBox
+        android:layout_below="@id/bankchecking_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay in Person"
+        android:id="@+id/payinperson_box"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_below="@id/payinperson_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:id="@+id/button_payment"
+        android:text="next ->"/>
+
+
+</RelativeLayout>

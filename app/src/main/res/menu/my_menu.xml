@@ -1,0 +1,47 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/action_home"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/action_cart"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart" />
+
+
+
+    <item
+        android:id="@+id/action_order_history"
+        app:showAsAction="never"
+        android:title="Order History"/>
+
+    <item
+        android:id="@+id/action_settings"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_setting"
+        android:title="My Account" />
+
+    <item
+        android:id="@+id/action_favorite"
+        app:showAsAction="never"
+        android:title="My Favorite"/>
+
+
+    <item
+        android:id="@+id/action_log_out"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_log_out"
+        android:title="Log out"/>
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,55 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/email_login"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/email_login"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/email_login"
+        android:id="@+id/password_login"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="log in"
+        android:id="@+id/button_login_login"
+        android:textAllCaps="false"
+        android:layout_below="@id/password_login"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="New User? Register"
+        android:id="@+id/button_register_login"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image_list_view"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_title_list_view"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/image_list_view"
+        android:text="title"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+
+    <ImageButton
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/remove"/>
+
+
+
+
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/text_title_list_view"
+        android:text="-"
+        android:background="@android:color/holo_orange_light"
+        android:layout_toLeftOf="@id/text_count_list_view"
+        android:id="@+id/minus_button"/>
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/text_title_list_view"
+        android:text="+"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentRight="true"
+        android:id="@+id/add_button"/>
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:id="@+id/text_count_list_view"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/add_button"
+        android:layout_below="@id/text_title_list_view"
+        android:text="count"
+        android:textSize="18dp"
+        android:textStyle="italic"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_price_list_view"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/text_count_list_view"
+        android:text="total"
+        android:textSize="18dp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

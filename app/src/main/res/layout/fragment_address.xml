@@ -1,0 +1,148 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="Last using address"/>
+
+
+
+    <CheckBox
+        android:layout_marginTop="10dp"
+        android:id="@+id/check_last_address"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:textColor="@android:color/darker_gray"
+
+        android:layout_height="wrap_content">
+
+
+    </CheckBox>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/new_address_linear">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="New address"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="address 1"
+                android:id="@+id/address_1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="address 2 (option)"
+                android:id="@+id/address_2"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:id="@+id/city"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:id="@+id/state"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="zip code"
+                android:id="@+id/zip_code"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="next ->"
+        android:id="@+id/address_submit"/>
+
+
+
+
+
+
+
+
+</LinearLayout>
